@@ -24,6 +24,7 @@ function App() {
   console.log(currentLocation)
 
   const bgs = {
+    "/vr_space": logo,
     "/": logo,
     "/about": women,
     "/contacts": bg_img,
@@ -55,6 +56,7 @@ function App() {
       <Header/>
 
       <Routes>
+      <Route path="/vr_space" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
