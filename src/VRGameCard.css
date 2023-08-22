@@ -1,0 +1,21 @@
+.vr-game-card {
+    border: 1px solid #615656;
+    padding: 5px;
+    text-align: center;
+    background-color: #c1b2b2;
+    border-radius: 15px; 
+    margin: 20px;
+  }
+  
+  .game-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .game-title {
+    margin: 10px 0;
+  }
+  
+  .game-description {
+    color: #666;
+  }

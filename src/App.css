@@ -1,10 +1,20 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+}
+
+.App-back {
+  height: auto;
+  width: 100%;
+  background-size: 150px;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: auto;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,3 +46,81 @@
     transform: rotate(360deg);
   }
 }
+
+.menu {
+  padding: 10px 0;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.menu-list li {
+  margin: 0 40px;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #19c0dd;
+  transition: color 0.3s; /* Add a smooth transition for color change */
+}
+
+.menu-list li a:hover {
+  color: white;
+  text-decoration: none;
+
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  height: 100vh; /* This will make the content take up the full viewport height */
+}
+
+
+@font-face {
+  font-family: 'CustomFont'; /* You can choose any name you want */
+  src: url('./fonts/BlackOpsOne-Regular.ttf') format('truetype');
+}
+
+.display-2 {
+  width: 50%;
+  text-align: center;
+  font-family: 'CustomFont', sans-serif;
+}
+
+.display-4 {
+  width: 50%;
+  text-align: center;
+  font-family: 'CustomFont', sans-serif;
+
+}
+
+
+
+.display-3 {
+  width: 80%;
+  text-align: center;
+  line-height: 2em;
+  color: #d1eef7;
+}
+
+.calendar-center {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 100vh;
+}
+
+.vr-game-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
