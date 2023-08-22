@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vr_space/static/css/main.707c4f2a.css",
-    "main.js": "/vr_space/static/js/main.8b0dbe60.js",
+    "main.css": "/vr_space/static/css/main.63c0b2e1.css",
+    "main.js": "/vr_space/static/js/main.95948d80.js",
     "static/js/787.f290fb9b.chunk.js": "/vr_space/static/js/787.f290fb9b.chunk.js",
     "static/media/women.avif": "/vr_space/static/media/women.2273fa1f3b8ed4ff9780.avif",
     "static/media/hands.avif": "/vr_space/static/media/hands.ac50547ec9bb2815bf01.avif",
@@ -13,16 +13,16 @@
     "static/media/skiing.jpeg": "/vr_space/static/media/skiing.d692fee415f0e3f9d91c.jpeg",
     "static/media/among.jpeg": "/vr_space/static/media/among.f4cd167ebaf3bcd6fe16.jpeg",
     "static/media/one.jpeg": "/vr_space/static/media/one.846806fe0eda3d75df3f.jpeg",
-    "static/media/logo4.png": "/vr_space/static/media/logo4.813afc5c51bf5af0afcc.png",
+    "static/media/logo.png": "/vr_space/static/media/logo.cf8213b0588a728835d3.png",
     "static/media/cubizm.jpeg": "/vr_space/static/media/cubizm.5d778ef497233cd25c9e.jpeg",
     "static/media/saber.avif": "/vr_space/static/media/saber.02422a93ffefca0b8327.avif",
     "index.html": "/vr_space/index.html",
-    "main.707c4f2a.css.map": "/vr_space/static/css/main.707c4f2a.css.map",
-    "main.8b0dbe60.js.map": "/vr_space/static/js/main.8b0dbe60.js.map",
+    "main.63c0b2e1.css.map": "/vr_space/static/css/main.63c0b2e1.css.map",
+    "main.95948d80.js.map": "/vr_space/static/js/main.95948d80.js.map",
     "787.f290fb9b.chunk.js.map": "/vr_space/static/js/787.f290fb9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.707c4f2a.css",
-    "static/js/main.8b0dbe60.js"
+    "static/css/main.63c0b2e1.css",
+    "static/js/main.95948d80.js"
   ]
 }
