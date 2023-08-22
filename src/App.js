@@ -1,5 +1,5 @@
 import logo from './assets/hands.avif';
-import logo2 from './assets/logo4.png';
+import logo2 from './assets/logo.png';
 import bg_img from './assets/bg_img1.avif';
 import bg_img1 from './assets/bg_img2.avif';
 import bg_img2 from './assets/logo1.avif';
