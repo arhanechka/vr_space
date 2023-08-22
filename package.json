@@ -1,7 +1,7 @@
 {
   "name": "vr",
   "version": "0.1.0",
-  "homepage": "https://arhanechka.github.io/vr-space",
+  "homepage": "https://arhanechka.github.io/vr_space",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
