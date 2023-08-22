@@ -9,6 +9,11 @@
   background-size: 150px;
 }
 
+@font-face {
+  font-family: 'CustomFont'; /* You can choose any name you want */
+  src: url('./fonts/BlackOpsOne-Regular.ttf') format('truetype');
+}
+
 .App-logo {
   height: auto;
   width: 20%;
@@ -66,6 +71,8 @@
   text-decoration: none;
   color: #19c0dd;
   transition: color 0.3s; /* Add a smooth transition for color change */
+  font-family: 'CustomFont', sans-serif;
+
 }
 
 .menu-list li a:hover {
@@ -83,10 +90,7 @@
 }
 
 
-@font-face {
-  font-family: 'CustomFont'; /* You can choose any name you want */
-  src: url('./fonts/BlackOpsOne-Regular.ttf') format('truetype');
-}
+
 
 .display-2 {
   width: 50%;
