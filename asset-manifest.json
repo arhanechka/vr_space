@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/vr-space/static/css/main.1604faee.css",
+    "main.js": "/vr-space/static/js/main.ceb71c89.js",
+    "static/js/787.f290fb9b.chunk.js": "/vr-space/static/js/787.f290fb9b.chunk.js",
+    "static/media/hands.avif": "/vr-space/static/media/hands.ac50547ec9bb2815bf01.avif",
+    "static/media/BlackOpsOne-Regular.ttf": "/vr-space/static/media/BlackOpsOne-Regular.b8437be32fe8faca71ed.ttf",
+    "static/media/drums.jpeg": "/vr-space/static/media/drums.152d9e3446f70c8e657f.jpeg",
+    "static/media/skiing.jpeg": "/vr-space/static/media/skiing.d692fee415f0e3f9d91c.jpeg",
+    "static/media/among.jpeg": "/vr-space/static/media/among.f4cd167ebaf3bcd6fe16.jpeg",
+    "static/media/one.jpeg": "/vr-space/static/media/one.846806fe0eda3d75df3f.jpeg",
+    "static/media/logo4.png": "/vr-space/static/media/logo4.813afc5c51bf5af0afcc.png",
+    "static/media/cubizm.jpeg": "/vr-space/static/media/cubizm.5d778ef497233cd25c9e.jpeg",
+    "static/media/saber.avif": "/vr-space/static/media/saber.02422a93ffefca0b8327.avif",
+    "index.html": "/vr-space/index.html",
+    "main.1604faee.css.map": "/vr-space/static/css/main.1604faee.css.map",
+    "main.ceb71c89.js.map": "/vr-space/static/js/main.ceb71c89.js.map",
+    "787.f290fb9b.chunk.js.map": "/vr-space/static/js/787.f290fb9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1604faee.css",
+    "static/js/main.ceb71c89.js"
+  ]
+}
