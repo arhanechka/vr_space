@@ -1,5 +1,6 @@
 import logo from "./assets/hands.avif";
-import logo2 from "./assets/logo.png";
+import logoIcon from "./assets/main_icont.png";
+import logoText from "./assets/main_textt.png";
 import bg_img from "./assets/bg_img1.avif";
 import bg_img1 from "./assets/bg_img2.avif";
 import bg_img2 from "./assets/logo1.avif";
@@ -46,16 +47,24 @@ function App() {
   };
   return (
     <div className="App">
+      <div style={backgroundImage}>
       <header className="App-header">
+      
         <Header />
-        <div style={backgroundImage}>
+        <div className="Logo-block">
           <img
-            src={logo2}
+            src={logoIcon}
             className="App-logo"
             alt="logo"
             onClick={routeChange}
           />
-        </div>
+              <img
+              className="column-1 "
+            src={logoText}
+            alt="logo"
+            onClick={routeChange}
+          />
+          </div>
       </header>
 
       <main>
@@ -67,27 +76,11 @@ function App() {
           <Route path="/games" element={<VRGameList />} />
           <Route path="/booking" element={<Booking />} />
         </Routes>
+
       </main>
 
-      {/* <div className="App-header" >
-      <div style={backgroundImage}>
-        <Header/>
-        <Booking/>
-     </div>
-     </div>
-     <div className="App-header">
-      <div style={backgroundImage}>
-        <Header/>
-        <VRGameList/>
-     </div>
-     </div>
-
-     <div className="App-header">
-      <div style={backgroundImage}>
-        <Header/>
-        <Contacts/>
-     </div>
-     </div> */}
+      </div>
+  
     </div>
   );
 }
