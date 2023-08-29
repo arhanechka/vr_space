@@ -14,18 +14,36 @@
 
 .Logo-block {
 position: absolute;
-top: 0;
+top: 3;
 left: 0;
   display: flex;
-  flex-direction: column;
- 
-  width: 150px; 
-  height: 150px; 
+  flex-direction: row;
+  width: 50%; 
+  height: 50%; 
+  align-items: center;
 }
+
+.small-logo {
+  width: 20%;
+  }
+
+
+.Big-logo {
+  width: 10%;
+  }
+  .Big-text {
+    width: 15%;
+    }
 
 .column-1 {
   flex-grow: 1; /* Колонка будет занимать 1/4 от доступной ширины */
   flex-basis: 0; /* Сброс минимальной ширины */
+  /* Дополнительные стили для второй колонки */
+}
+
+.small-text{
+  height: 50%; /* Колонка будет занимать 1/4 от доступной ширины */
+  
   /* Дополнительные стили для второй колонки */
 }
 
@@ -34,13 +52,8 @@ left: 0;
   src: url("./fonts/BlackOpsOne-Regular.ttf") format("truetype");
 }
 
-.App-logo {
-  flex-grow: 3; /* Колонка будет занимать 3/4 от доступной ширины */
-  flex-basis: 0; /* Сброс минимальной ширины */
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .Big-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -55,6 +68,7 @@ left: 0;
   color: white;
   position: sticky;
   top: 0;
+  /* backdrop-filter: blur(10px); */
 }
 
 .App-link {
@@ -74,6 +88,13 @@ left: 0;
   padding: 10px 0;
 }
 
+.bg_image {
+    background-size: cover;
+    background-position: center;
+    width: 10px;
+    height: 100vh;
+}
+
 .menu-list {
   list-style: none;
   display: flex;
@@ -87,11 +108,15 @@ left: 0;
   color: #19c0dd;
   transition: color 0.3s; /* Add a smooth transition for color change */
   font-family: "CustomFont", sans-serif;
+  font-size:large;
 }
 
 .menu-list li a:hover {
   color: white;
   text-decoration: none;
+}
+.menu-link {
+  text-decoration: none; /* Remove underline */
 }
 
 .center-content {
@@ -99,17 +124,18 @@ left: 0;
   flex-direction: column;
   align-items: center;
   justify-content: top;
-  height: 100vh; /* This will make the content take up the full viewport height */
+  color: #d1eef7;
 }
 
 .display-2 {
-  width: 50%;
+  width: 80%;
   text-align: center;
   font-family: "CustomFont", sans-serif;
+  
 }
 
 .display-4 {
-  width: 50%;
+  width: 80%;
   text-align: center;
   font-family: "CustomFont", sans-serif;
 }
@@ -119,6 +145,7 @@ left: 0;
   text-align: center;
   line-height: 2em;
   color: #d1eef7;
+  margin-bottom: 50px;
 }
 
 .calendar-center {

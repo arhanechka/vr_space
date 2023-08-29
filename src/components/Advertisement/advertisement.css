@@ -1,0 +1,82 @@
+/* YourComponent.css */
+.flex-container {
+    display: flex;
+  width: 80%;
+  height: 70vh; /* Занимает 60% высоты экрана */
+  margin: 0 auto; /* Горизонтально по центру */
+  background-color: rgba(187, 222, 237, 0.1); 
+  border-radius: 30px;
+  }
+  
+  .image-block {
+    flex: 1; /* Take up equal width */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    border-radius: 30px;
+
+  }
+  
+  .image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-block {
+    flex: 1; /* Занимает равную ширину */
+    display: flex;
+    align-items: center;
+    background-color: rgba(62, 115, 119, 0.4); /* Полупрозрачный черный фон */
+    color: white;
+    padding: 20px; /* Добавляем отступы для текста */
+    border-radius: 30px;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space between items */
+    color: white;
+    padding: 20px; /* Add padding for text */
+
+  }
+  .text-block p {
+    text-align: center;
+    line-height: 1.5; /* Increase line height for readability */
+  }
+  
+  .text-block strong {
+    font-size: 1.2em; /* Increase font size for highlighted text */
+  }
+  
+  .bookButton {
+    text-align: center;
+    margin-top: 10px; /* Add margin to separate from text */
+  }
+  
+  .bookButton a {
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(39, 45, 90);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative; /* Required for pseudo-element positioning */
+}
+
+.bookButton a::before {
+    content: ""; /* Pseudo-element for border animation */
+    position: absolute;
+    top: -5px; /* Adjust the position of the animated border */
+    left: -5px; /* Adjust the position of the animated border */
+    right: -5px; /* Adjust the position of the animated border */
+    bottom: -5px; /* Adjust the position of the animated border */
+    border: 2px solid transparent;
+    border-radius: 7px; /* Matches the button's border-radius */
+    animation: border-flash 1s infinite; /* Apply the border flashing animation */
+  }
+
+  @keyframes border-flash {
+    0%, 100% {
+      border-color: transparent; /* Fully transparent */
+    }
+    50% {
+      border-color: #007BFF; /* Border color when visible */
+    }
+  }
+  

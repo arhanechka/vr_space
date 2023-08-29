@@ -1,5 +1,5 @@
 import React from "react";
-import "../VRGameCard.css"; // Import your custom CSS for styling
+import "../css/VRGameCard.css"; // Import your custom CSS for styling
 
 const VRGameCard = ({ imageSrc, title, description }) => {
   return (
