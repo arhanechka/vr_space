@@ -21,4 +21,8 @@
     width: 25vh;
     height: 20vh;
   }
+
+  .menu {
+    display: none;
+  }
 }
