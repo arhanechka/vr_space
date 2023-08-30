@@ -5,13 +5,13 @@
   height: 70vh; /* Занимает 60% высоты экрана */
   margin: 0 auto; /* Горизонтально по центру */
   background-color: rgba(187, 222, 237, 0.1); 
-  border-radius: 30px;
+  border-radius: 5px;
   }
   
   .image-block {
     flex: 1; /* Take up equal width */
     overflow: hidden; /* Ensure the image doesn't overflow */
-    border-radius: 30px;
+    border-radius: 5px;
 
   }
   
@@ -28,7 +28,7 @@
     background-color: rgba(62, 115, 119, 0.4); /* Полупрозрачный черный фон */
     color: white;
     padding: 20px; /* Добавляем отступы для текста */
-    border-radius: 30px;
+    border-radius: 5px;
     flex-direction: column; /* Stack items vertically */
     justify-content: space-between; /* Space between items */
     color: white;

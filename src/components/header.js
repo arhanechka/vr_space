@@ -9,6 +9,11 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Menu from "./menu";
 import HomeTop from "./homeTop";
 import BookButton from './BookButton/bookButton';
+import logo1 from "../assets/logo_new.png";
+import logo2 from "../assets/logo_new1.png";
+import logo3 from "../assets/logo_new2.jpg";
+
+
 function Header(props) {
 
   const bgs = {
@@ -42,8 +47,8 @@ function Header(props) {
     return (
       <div
       style={{
-        backgroundImage: `url(${bgs[currentLocation]})`,
-        backgroundSize: "contain",
+        backgroundImage: `url(${logo1})`,
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top",
         width: "100vw",
