@@ -1,0 +1,40 @@
+.menu-link {
+    text-decoration: none; 
+    text-align: center;
+    font-family: "CustomFont", sans-serif;
+    color: white;
+    position: relative; 
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  .menu-link::before {
+    content: attr(data-text); /* Get text content from data attribute */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place below the original text */
+    color: #FFD700; /* Bright yellow color for stroke */
+    -webkit-background-clip: text; /* Apply text as background clip */
+    background-clip: text;
+    padding: 2px; /* Control the stroke width */
+    opacity: 0.9; /* Adjust opacity for stroke effect */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); /* Increase the blur radius and opacity */
+  
+  }
+
+  /* LanguageSelect.css */
+.language-select {
+    position: absolute;
+    right: 0.0;
+  }
+  
+  .language-select select {
+    padding: 5px;
+  font-size: 16px;
+  border: 1px solid #4d8e99; /* Set the border color to blue */
+  border-radius: 5px;
+  background-color: #88a5c2; /* Set the background color */
+  color: #333; /* Set the text color */
+  }
+  
+  

@@ -1,8 +1,11 @@
 
 import './advertisement.css';
-import image from "../../assets/adv.jpg";
+import image from "../../assets/wow.png";
+import { useTranslation } from "react-i18next";
 
 function Advertisment(props) {
+  const { t } = useTranslation();
+
     return (
         <div className="flex-container">
         <div className="image-block">
@@ -10,12 +13,16 @@ function Advertisment(props) {
         </div>
         <div className="text-block">
         <div className="text-block">
-        <p>Unleash the World of<br /><strong>EXCLUSIVE FREE-ROAM VIRTUAL REALITY IN SETUBAL</strong><br />Unprecedented Virtual Reality encounters you won't find elsewhere.<br /><br />Unleash your exploration<br />Ample space for movement within an area as vast as a tennis court.<br /><br />Wireless, boundless movement<br />Experience freedom as you move without constraints or cables.<br /><br />Shared entertainment for all<br />Up to 4 friends can enjoy collective gameplay.</p>
+        <p>{t("adv1")}<br /><strong>{t("adv2")}</strong><br />
+        {t("adv3")}<br /><br />
+        {t("adv4")}<br />{t("adv5")}<br /><br />
+        {t("adv6")}<br />{t("adv7")}<br /><br />
+        {t("adv8")}<br />{t("adv9")}</p>
       </div>
       <div className="bookButton"
       onClick={()=>props.routeChange(props.path)}
       >
-          <a href="#">Book now</a>
+          <a href="#">{t("booknow")}</a>
         </div>
 
         </div>

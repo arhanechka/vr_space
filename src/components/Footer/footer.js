@@ -9,12 +9,14 @@ import {
   faInstagram,
   faTiktok
 } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="copyright">
-        &copy; 2023 VR Space. All rights reserved.
+        &copy; 2023 VR Space. {t("copyright")}
       </div>
       <div className="social-icons">
         <a href="https://www.youtube.com/c/jamesqquick"

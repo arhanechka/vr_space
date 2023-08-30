@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
+import "./services/i18n";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

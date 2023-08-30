@@ -1,11 +1,17 @@
 .vr-game-card {
-    border: 1px solid #615656;
-    padding: 5px;
-    text-align: center;
-    background-color: #c1b2b2;
-    border-radius: 15px; 
-    margin: 20px;
-  }
+  border: 1px solid #615656;
+  padding: 5px;
+  text-align: center;
+  background-color: #1d1a1a;
+  border-radius: 15px;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Добавляем переходы для анимации */
+}
+
+.vr-game-card:hover {
+  transform: translateY(-10px) scale(1.05); /* Приближаем и приподнимаем при наведении */
+  box-shadow: 0 10px 20px rgba(118, 208, 209, 0.3), 0 0 40px rgba(156, 166, 170, 0.1); /* Добавляем свечение и тень при наведении */
+}
   
   .game-image {
     max-width: 100%;

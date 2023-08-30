@@ -1,4 +1,4 @@
-import Header from "./components/header";
+import Header from "./components/Header/header";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import About from "./components/about";
@@ -17,6 +17,10 @@ function App() {
     navigate(path, { replace: true });
   };
 
+  const location = useLocation();
+  let currentLocation = location.pathname;
+  console.log(currentLocation);
+
   return (
     <div className="App">
       <Header routeChange={routeChange} homepath='/' bookingpath='booking'/>
@@ -26,9 +30,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/games" element={<VRGameList />} />
-          <Route path="/booking" element={<Booking />} />
+          <Route path="/booking" element={<Booking routeChange={routeChange} path='/' />} />
         </Routes>
-        <Advertisment routeChange={routeChange} path='booking'/>
+        {currentLocation === "/" &&
+        <Advertisment routeChange={routeChange} path='booking'/> 
+  }
       </main>
       <Contacts/>
       <Footer />

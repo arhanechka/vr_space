@@ -1,28 +1,25 @@
 export const menu = [
     {
-    name: "Why VR Space?",
+    name: "menu1",
     link: "/"
   },
   {
-    name: "What to expect",
+    name: "menu2",
     link: "/about"
   },
   {
-    name: "Plan your event",
-    link: "/"
-  },{
-    name: "Booking",
+    name: "menu3",
     link: "/booking"
   },{
-    name: "Games",
+    name: "menu4",
     link: "/games"
   },
   {
-    name: "Blog",
+    name: "menu5",
     link: "/contacts"
   },
   {
-    name: "Location",
+    name: "menu6",
     link: "/contacts"
   },
 ]
