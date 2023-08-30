@@ -20,9 +20,9 @@ function Advertisment(props) {
         {t("adv8")}<br />{t("adv9")}</p>
       </div>
       <div className="bookButton"
-      onClick={()=>props.routeChange(props.path)}
+      onClick={()=>props.routeChange("/date")}
       >
-          <a href="#">{t("booknow")}</a>
+          <a>{t("booknow")}</a>
         </div>
 
         </div>

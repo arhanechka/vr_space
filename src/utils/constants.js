@@ -9,7 +9,7 @@ export const menu = [
   },
   {
     name: "menu3",
-    link: "/booking"
+    link: "/date"
   },{
     name: "menu4",
     link: "/games"

@@ -16,7 +16,7 @@ function Header(props) {
     "/vr_space": logo1,
     "/": logo1,
     "/games": logo2,
-    "/booking": logo3
+    "/date": logo3
   };
   const [scrollOpacity, setScrollOpacity] = useState(0);
   const location = useLocation();
@@ -65,7 +65,7 @@ function Header(props) {
         </div>
         <LanguageSelect />
 
-        <BookButton routeChange={props.routeChange} bookingpath="booking" />
+        <BookButton routeChange={props.routeChange} bookingpath="date" />
         <Menu />
         <div className="Logo-block">
           <img
@@ -76,7 +76,9 @@ function Header(props) {
           />
         </div>
       </header>
-      <HomeTop />
+      {props.isBooking && 
+      <HomeTop isLogo={props.isLogo}/>
+    }
     </div>
   );
 }

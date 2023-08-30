@@ -1,5 +1,22 @@
 .react-calendar {
     background: rgba(255, 255, 255, 0.8); /* Adjust the alpha value for transparency */
     border: none;
-
+    width: calc(100% - 40px); 
   }
+
+  .number-select-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .number-select-block label {
+    margin-right: 10px;
+  }
+  
+  .number-select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,25 @@
+.time-slots-container {
+    display: flex;
+    flex-wrap: wrap; /* Обернуть слоты на новую строку */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    margin-top: 20px;
+    gap: 5px; /* Промежуток между слотами */
+  }
+  
+  .time-slot {
+    width: calc(25% - 10px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer; /* Добавьте указатель при наведении */
+  }
+  
+  .time-slot.active {
+    background-color: #6bb6e7; /* Цвет для выбранного времени */
+    color: white; /* Измените цвет текста для лучшей видимости */
+  }
+  
