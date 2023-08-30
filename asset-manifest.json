@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/vr_space/static/css/main.63c0b2e1.css",
-    "main.js": "/vr_space/static/js/main.95948d80.js",
+    "main.css": "/vr_space/static/css/main.1ccc49b1.css",
+    "main.js": "/vr_space/static/js/main.2283625e.js",
     "static/js/787.f290fb9b.chunk.js": "/vr_space/static/js/787.f290fb9b.chunk.js",
-    "static/media/women.avif": "/vr_space/static/media/women.2273fa1f3b8ed4ff9780.avif",
-    "static/media/hands.avif": "/vr_space/static/media/hands.ac50547ec9bb2815bf01.avif",
-    "static/media/logo1.avif": "/vr_space/static/media/logo1.5e5add2c282df9c81649.avif",
-    "static/media/bg_img2.avif": "/vr_space/static/media/bg_img2.42d7eb826e4322fda795.avif",
+    "static/media/logo_new1.png": "/vr_space/static/media/logo_new1.d8de2bdc9c1c5ab11cfb.png",
+    "static/media/logo_new.png": "/vr_space/static/media/logo_new.aed0753dcb3bd8b507e0.png",
+    "static/media/logo_new2.jpg": "/vr_space/static/media/logo_new2.da1786c10cfc585e3d19.jpg",
+    "static/media/wow.png": "/vr_space/static/media/wow.934524ec0bf029a69e22.png",
+    "static/media/cal.png": "/vr_space/static/media/cal.9e37578b05fb4b6dee8b.png",
     "static/media/BlackOpsOne-Regular.ttf": "/vr_space/static/media/BlackOpsOne-Regular.b8437be32fe8faca71ed.ttf",
     "static/media/drums.jpeg": "/vr_space/static/media/drums.152d9e3446f70c8e657f.jpeg",
-    "static/media/bg_img1.avif": "/vr_space/static/media/bg_img1.3238c3b713aed4e6bc0d.avif",
     "static/media/skiing.jpeg": "/vr_space/static/media/skiing.d692fee415f0e3f9d91c.jpeg",
     "static/media/among.jpeg": "/vr_space/static/media/among.f4cd167ebaf3bcd6fe16.jpeg",
     "static/media/one.jpeg": "/vr_space/static/media/one.846806fe0eda3d75df3f.jpeg",
-    "static/media/logo.png": "/vr_space/static/media/logo.cf8213b0588a728835d3.png",
     "static/media/cubizm.jpeg": "/vr_space/static/media/cubizm.5d778ef497233cd25c9e.jpeg",
+    "static/media/main_icont.png": "/vr_space/static/media/main_icont.0845e1fefb08ed3cbc3c.png",
     "static/media/saber.avif": "/vr_space/static/media/saber.02422a93ffefca0b8327.avif",
+    "static/media/hor_logo.png": "/vr_space/static/media/hor_logo.b3c000ad4b9a22dd0914.png",
+    "static/media/main_textt.png": "/vr_space/static/media/main_textt.dc37cdb9b2059adf7adb.png",
     "index.html": "/vr_space/index.html",
-    "main.63c0b2e1.css.map": "/vr_space/static/css/main.63c0b2e1.css.map",
-    "main.95948d80.js.map": "/vr_space/static/js/main.95948d80.js.map",
+    "main.1ccc49b1.css.map": "/vr_space/static/css/main.1ccc49b1.css.map",
+    "main.2283625e.js.map": "/vr_space/static/js/main.2283625e.js.map",
     "787.f290fb9b.chunk.js.map": "/vr_space/static/js/787.f290fb9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63c0b2e1.css",
-    "static/js/main.95948d80.js"
+    "static/css/main.1ccc49b1.css",
+    "static/js/main.2283625e.js"
   ]
 }
