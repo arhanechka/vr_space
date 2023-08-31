@@ -1,0 +1,218 @@
+.summary {
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+.summary h2 {
+  color: #afd2d4;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+  color: #e2edee;
+}
+
+.summary-section {
+  margin-bottom: 20px;
+}
+
+/* ContactDetails.css */
+.contact-details {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Increased spacing between form groups */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px; /* Added spacing between inputs/selects */
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="tel"] {
+    outline: none;
+  }
+  
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    width: auto; /* Set the width of the select element to the content's width */
+  }
+  
+  .phone-input {
+    display: flex;
+    align-items: center; /* Vertically center the select and input */
+  }
+  
+.contact-details h2 {
+  color: #1b3928;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.important-information {
+  padding: 20px;
+}
+
+.important-information h2 {
+  color: #1b3928;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.important-info {
+    background-color: #1b875a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .important-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .info-list {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .info-list li {
+    margin-bottom: 10px;
+    color: #1b3928;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: start;
+    margin-top: 10px;
+  }
+  
+  .checkbox-label {
+    font-size: 14px;
+    color: #712d2d;
+    display: flex;
+    align-items: center;
+    /* Fill the available space */
+  }
+  
+  .checkbox-label input {
+    width: 20px; /* Increase the width */
+    height: 20px; /* Increase the height */
+    margin-right: 10px; /* Add more spacing */
+  }
+.checkout {
+  padding: 20px;
+  position: relative; /* Add this to establish a positioning context */
+  overflow: hidden;
+}
+
+.checkout h2 {
+  color: #1b3928;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.image {
+    width: 100%; /* Make the image width 100% of the parent's width */
+    height: 100%; /* Make the image height 100% of the parent's height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  }
+
+.booking-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 70%; /* Set the width to 70% of the screen */
+  margin: 0 auto; 
+  }
+  
+  .left-column {
+    flex: 1;
+    padding-right: 20px;
+    border: 1px solid #ccc; /* Add border to the left column */
+    background-color: #dee7f0;
+  }
+  
+  .right-column {
+    flex: 0 0 30%; /* 30% width */
+    border: 1px solid #ccc; /* Add border to the right column */
+    background-color: #1b2e40;
+  }
+
+  
+  .checkoutButton {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkoutButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #4CAF50;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .checkoutButton:hover::before {
+    opacity: 1;
+  }
+
+  .checkoutButton:hover {
+    /* ... existing styles ... */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 16px 60px rgba(0, 0, 0, 0.3); 
+    transform: translateY(2px); /* Add translation on hover for press effect */
+  }
+  
+  .checkoutButton:active {
+    transform: translateY(4px); /* Further translate on button press */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+
+.form-container {
+  flex: 1;
+  padding-left: 20px;
+}

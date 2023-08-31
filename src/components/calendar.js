@@ -9,7 +9,28 @@ import TimeSlots from './Bookings/TimeSlots';
 function Booking(props) {
   const { t } = useTranslation();
   const [date, setDate] = useState();
+  const [selectedValue, setSelectedValue] = useState('1'); 
+  const [slot, setSelectedSlot] = useState(); 
+  const [isDataCompleted, setIsDataCompleted] = useState()
+
   const minSelectableDate = new Date();
+  console.log(date)
+
+
+  const handlePersonsChange = (event) => {
+    setSelectedValue(event.target.value); 
+  };
+
+  const handleTimeChange = (time) => {
+    if (selectedValue && date){
+      console.log("setting time")
+      console.log(time)
+      setSelectedSlot(time); 
+      setIsDataCompleted(true)
+      props.updateBooking(selectedValue, date, time)
+    }
+  };
+
   return (
     <div className="flex-container" style={{marginTop:"50px", height: "auto"}}>
     <div className="image-block">
@@ -21,7 +42,7 @@ function Booking(props) {
     <div className="calendar-container">
     <div className="number-select-block">
   <label htmlFor="numberOfPeople">Number of people</label>
-  <select id="numberOfPeople" className="number-select">
+  <select id="numberOfPeople" className="number-select" value={selectedValue} onChange={handlePersonsChange}>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -30,19 +51,17 @@ function Booking(props) {
     </div>
       <Calendar value={date} onChange={setDate} minDate={minSelectableDate} />
       {date && 
-      <TimeSlots /> 
+      <TimeSlots handleTimeChange={handleTimeChange}/> 
 }
       <div className="bookButton"
-      onClick={()=>props.routeChange("/booking")}
+      onClick={() => isDataCompleted ? props.routeChange("/booking") : alert("Please add your parameters")} // Используйте тернарный оператор
+      disabled={!date}
       >
           <a>{t("booknow")}</a>
         </div>
     </div>
     </div>
   </div>
-
-
-   
   );
   
 }

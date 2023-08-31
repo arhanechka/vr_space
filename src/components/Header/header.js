@@ -18,10 +18,15 @@ function Header(props) {
     "/games": logo2,
     "/date": logo3
   };
-  const [scrollOpacity, setScrollOpacity] = useState(0);
   const location = useLocation();
   let currentLocation = location.pathname;
-  console.log(currentLocation);
+
+  const [scrollOpacity, setScrollOpacity] = useState(0);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(currentLocation!=="/booking")
+
+  useEffect(()=>{
+    setIsHeaderVisible(currentLocation!=="/booking")
+  })
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -44,7 +49,7 @@ function Header(props) {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top",
         width: "100vw",
-        height: "70vh",
+        height: currentLocation!=="/booking" ? "70vh" : "20vh",
       }}
     >
       <header
@@ -64,8 +69,9 @@ function Header(props) {
           </button>
         </div>
         <LanguageSelect />
-
+      {isHeaderVisible && 
         <BookButton routeChange={props.routeChange} bookingpath="date" />
+      }
         <Menu />
         <div className="Logo-block">
           <img
