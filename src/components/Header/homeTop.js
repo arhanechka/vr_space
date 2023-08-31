@@ -15,10 +15,10 @@ function HomeTop(props) {
         </>
       }
         <h2 className="display-4" style={{ marginTop: props.isLogo ? '0' : '200px' }}>{t("main_header")}</h2>
-        <p className="display-2">{t("main_text")}</p>
+        <p className="display-2" style={{ marginTop: '-30px', position: "relative"}}>{t("main_text")}</p>
       </div>
     </div>
   );
-};
+}
 
 export default HomeTop;
