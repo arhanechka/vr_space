@@ -7,6 +7,8 @@ import BookButton from '../BookButton/bookButton';
 import logo1 from "../../assets/logo_new.png";
 import logo2 from "../../assets/logo_new1.png";
 import logo3 from "../../assets/logo_new2.jpg";
+import event from "../../assets/event.png";
+
 import './Header.css'; // Import your CSS file
 
 import LanguageSelect from "./LanguageSelect";
@@ -16,7 +18,8 @@ function Header(props) {
     "/vr_space": logo1,
     "/": logo1,
     "/games": logo2,
-    "/date": logo3
+    "/date": logo3,
+    "/events": event
   };
   const location = useLocation();
   let currentLocation = location.pathname;

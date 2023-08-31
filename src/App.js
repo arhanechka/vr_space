@@ -12,6 +12,7 @@ import "./App.css";
 import { useState } from "react";
 import Booking from "./components/Bookings/Booking";
 import bg from "./assets/bg.png"
+import EventPlanning from "./components/EventPlanning/eventPlanning";
 
 function App() {
   let navigate = useNavigate();
@@ -53,6 +54,7 @@ function App() {
         <Routes>
           <Route path="/vr" element={<Home />} />
           <Route path="/" element={<Home />} />
+          <Route path="/events" element={<EventPlanning />} />
           <Route path="/about" element={<About />} />
           <Route path="/games" element={<VRGameList />} />
           <Route path="/date" element={<Calendar routeChange={routeChange} path='/' updateBooking={updateBooking}/>} />

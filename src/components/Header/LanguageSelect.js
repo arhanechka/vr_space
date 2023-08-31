@@ -17,7 +17,6 @@ const LanguageSelect = () => {
       <select id="languages" value={selectedLanguage} onChange={handleLanguageChange}>
         <option value="en">EN</option>
         <option value="pt">PT</option>
-        <option value="ru">RU</option>
         {/* Add more language options here */}
       </select>
     </div>
