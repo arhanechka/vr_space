@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import { InlineWidget } from "react-calendly";
 import '../CustomCalendar.css'; // Import your custom CSS
 import './Advertisement/advertisement.css';
 import image from "../assets/cal.png";
@@ -38,7 +39,7 @@ function Booking(props) {
         </div>
     <div className="text-block">
 
-    <h2 className="display-2">Book your game</h2>
+    <h2 className="display-2" style={{ color: '#02f4f7' }}>Book your game</h2>
     <div className="calendar-container">
     <div className="number-select-block">
   <label htmlFor="numberOfPeople">Number of people</label>
@@ -49,8 +50,9 @@ function Booking(props) {
     <option value="4">4</option>
   </select>
     </div>
-      <Calendar value={date} onChange={setDate} minDate={minSelectableDate} />
-      {date && 
+      {/*<Calendar value={date} onChange={setDate} minDate={minSelectableDate} />*/}
+      <InlineWidget url="https://calendly.com/vr-space-pt/30min?hide_gdpr_banner=1&background_color=3e7377&text_color=ffffff" />
+      {date &&
       <TimeSlots handleTimeChange={handleTimeChange}/> 
 }
       <div className="bookButton"
