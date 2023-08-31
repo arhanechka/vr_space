@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from 'react';
 import './BookingForm.css'; // Import your CSS file
 
-const ContactDetails = () => {
+const ContactDetails = (props) => {
     const [email, setEmail] = useState('');
     const [fullName, setFullName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -21,9 +21,9 @@ const ContactDetails = () => {
 
     useEffect(()=>{
         if (email && fullName && phoneNumber){
-            
+            props.handleUserData({email, fullName, phoneNumber})
         }
-    })
+    },[email,fullName,phoneNumber])
   return (
     <div className="contact-details">
     <h2>Your Contact Details</h2>

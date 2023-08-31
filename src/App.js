@@ -51,7 +51,7 @@ function App() {
       <Header routeChange={routeChange} homepath='/' bookingpath='booking' isLogo={currentLocation!=="/date"} isBooking={currentLocation!=="/booking"}/>
       <main >
         <Routes>
-          <Route path="/vr_space" element={<Home />} />
+          <Route path="/vr" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/games" element={<VRGameList />} />

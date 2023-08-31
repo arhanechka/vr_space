@@ -1,7 +1,7 @@
 export const menu = [
     {
     name: "menu1",
-    link: "/"
+    link: "/vr"
   },
   {
     name: "menu2",

@@ -13,15 +13,19 @@ import Checkout from './Checkout';
 const Booking = (props) => {
 const [userData, setUserData] = useState()
 
+const handleUserData = (data) => {
+    setUserData(data)
+}
+
     return (
         <div className="booking-form">
           <div className="left-column">
-            <ContactDetails />
+            <ContactDetails handleUserData={handleUserData}/>
             <ImportantInformation />
             <Checkout/>
           </div>
           <div className="right-column">
-            <Summary  bookingDetails={props.bookingDetails}/>
+            <Summary  bookingDetails={props.bookingDetails} userData={userData}/>
           </div>
         </div>
   );
