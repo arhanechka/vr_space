@@ -86,6 +86,7 @@
 
 .menu {
   padding: 10px 0;
+  z-index: 200;
 }
 
 .bg_image {
@@ -124,17 +125,15 @@
   color: #d1eef7;
 }
 
-
-
 .display-4 {
   width: 80%;
   text-align: center;
   font-family: "CustomFont", sans-serif;
   color: white;
-  position: relative; 
+  position: relative;
   font-size: 36px;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
-  letter-spacing: 4px; 
+  letter-spacing: 4px;
 }
 
 .display-4::before {
@@ -143,18 +142,17 @@
   top: 0;
   left: 0;
   z-index: -1; /* Place below the original text */
-  color: #FFD700; /* Bright yellow color for stroke */
+  color: #ffd700; /* Bright yellow color for stroke */
   -webkit-background-clip: text; /* Apply text as background clip */
   background-clip: text;
   padding: 2px; /* Control the stroke width */
   opacity: 0.9; /* Adjust opacity for stroke effect */
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); /* Increase the blur radius and opacity */
   letter-spacing: 4px; /* Adjust the letter spacing for the stroked text */
-
 }
 
 .display-2 {
-  @extend .display-4; 
+  @extend .display-4;
   font-size: 24px;
   color: white;
   font-family: "CustomFont", sans-serif;
@@ -234,4 +232,3 @@
 .home-container {
   margin-top: 4%;
 }
-
