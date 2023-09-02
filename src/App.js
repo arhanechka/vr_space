@@ -6,12 +6,13 @@ import Calendar from "./components/calendar";
 import VRGameList from "./components/VRGameList";
 import Footer from "./components/Footer/footer";
 import Advertisment from "./components/Advertisement/advertisement";
+import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 import { useNavigate, useLocation } from "react-router-dom";
- import Contacts from "./components/Contacts/contacts";
+import Contacts from "./components/Contacts/contacts";
 import "./App.css";
 import { useState } from "react";
 import Booking from "./components/Bookings/Booking";
-import bg from "./assets/bg.png"
+import bg from "./assets/bg.png";
 import EventPlanning from "./components/EventPlanning/eventPlanning";
 
 function App() {
@@ -26,48 +27,79 @@ function App() {
 
   let [booking, setBooking] = useState();
 
-  const updateBooking = (players, date, slot)=> {
-    console.log("in app")
-    console.log(players)
-    console.log(date)
-    console.log(slot)
-    setBooking({players, date, slot })
-  }
+  const updateBooking = (players, date, slot) => {
+    console.log("in app");
+    console.log(players);
+    console.log(date);
+    console.log(slot);
+    setBooking({ players, date, slot });
+  };
 
   const fullscreenBg = {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "top",
-    width: '100%',
-  height: 'auto', 
-  backgroundImage: `url(${bg})`,
-  backgroundColor: 'rgba(0, 0, 0, 0.5)'
-  }
-
+    width: "100%",
+    height: "auto",
+    backgroundImage: `url(${bg})`,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+  };
 
   return (
-<div className="App" >
-  <div style={currentLocation === "/booking" ? fullscreenBg : null}>
-    <div>
-      <Header routeChange={routeChange} homepath='/' bookingpath='booking' isLogo={currentLocation!=="/date"} isBooking={currentLocation!=="/booking"}/>
-      <main >
-        <Routes>
-          <Route path="/vr" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/events" element={<EventPlanning />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/games" element={<VRGameList />} />
-          <Route path="/date" element={<Calendar routeChange={routeChange} path='/' updateBooking={updateBooking}/>} />
-          <Route path="/booking" element={<Booking routeChange={routeChange} path='/' bookingDetails={booking}/>} />
-
-        </Routes>
-        {currentLocation === "/" &&
-        <Advertisment routeChange={routeChange} path='booking'/> 
-  }
-      </main>
-      <Contacts/>
-      <Footer />
-      </div>
+    <div className="App">
+      <div style={currentLocation === "/booking" ? fullscreenBg : null}>
+        <div>
+          <Header
+            routeChange={routeChange}
+            homepath="/"
+            bookingpath="booking"
+            isLogo={currentLocation !== "/date"}
+            isBooking={currentLocation !== "/booking"}
+          />
+          <BurgerMenu />
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/vr-game-list" element={<VRGameList />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/about" element={<About />} />
+            {/* Add more routes for your other components */}
+          </Routes>
+          <main>
+            <Routes>
+              <Route path="/vr" element={<Home />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/events" element={<EventPlanning />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/games" element={<VRGameList />} />
+              <Route
+                path="/date"
+                element={
+                  <Calendar
+                    routeChange={routeChange}
+                    path="/"
+                    updateBooking={updateBooking}
+                  />
+                }
+              />
+              <Route
+                path="/booking"
+                element={
+                  <Booking
+                    routeChange={routeChange}
+                    path="/"
+                    bookingDetails={booking}
+                  />
+                }
+              />
+            </Routes>
+            {currentLocation === "/" && (
+              <Advertisment routeChange={routeChange} path="booking" />
+            )}
+          </main>
+          <Contacts />
+          <Footer />
+        </div>
       </div>
     </div>
   );
