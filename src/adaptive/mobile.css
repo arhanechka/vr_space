@@ -25,4 +25,12 @@
   .menu {
     display: none;
   }
+
+  .contacts {
+    display: none;
+  }
+
+  .small-logo {
+    width: 100px;
+  }
 }
